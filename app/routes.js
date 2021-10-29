@@ -38,7 +38,7 @@ module.exports = function(app, passport, db) {
       db.collection('orders')
       .findOneAndUpdate({name: req.body.name, order: req.body.order}, {
         $set: {
-          barista:'',
+          barista:req.user.local.email,
           completed: true
         }
       }, {

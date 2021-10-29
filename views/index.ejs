@@ -1,32 +1,50 @@
 <!doctype html>
 <html>
 <head>
-    <title>21 Savage Fan Site</title>
+    <title>Duane's Coffee Shop</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
 <div class="container">
 
-    <div class="jumbotron text-center">
+    <div class="input">
         <h1>Welcome to the Coffee Shop!</h1>
         <img src="img/coffee.jpg" alt="Coffee">
 
-        <p>Login or Signup:</p>
+        <p>Employee Login or Signup:</p>
 
         <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
         <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
 
     </div>
-    <div class="col-sm-6">
-        <h3>Place Order</h3>
-        <form action="/sendorder" method="POST">
-        <input type="text" placeholder="Customer Name" name="name">
-        <input type="radio" name="order" value="tea">Tea 
-        <input type="radio" name="order" value="coffee">Coffee
-        <input type="radio" name="order" value="hot chocolate">Hot Chocolate
-        <button type="submit">Submit</button>
+    <div class="container2">
+        <h3>Place Customer Order</h3>
+        <div class="sendorder">
+            <form action="/sendorder" method="POST">
+            <input type="text" placeholder="Customer Name" name="name">
+        </div>
+
+        <div class="tea">
+            <img src="img/tea.jpg" alt="">
+            <input type="radio" name="order" value="tea">Tea
+        </div>
+
+        <div class="coffee">
+            <img src="img/coffeemenu.jpg" alt="">
+            <input type="radio" name="order" value="coffee">Coffee
+        </div>
+
+        <div class="choc">
+            <img src="img/hotchoc.jpg" alt="">
+            <input type="radio" name="order" value="hot chocolate">Hot Chocolate
+        </div>
+
+        <button type="submit">Submit Order</button>
         </form>
     </div>
     
